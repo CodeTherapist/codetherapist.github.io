@@ -1,2 +1,1 @@
-# codetherapist.github
-My Blog.
+This the repository for my Blog: https://codetherapist.github.io/.
