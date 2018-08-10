@@ -26,7 +26,7 @@ title: About Code Therapist
 			<a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>,
 			<a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a>
 		</li>
-		<li>Coorganizer of <a href="https://www.meeup.com/de-DE/Basel-NET-User-Group/" target="_blank">.NET User Group</a> (located in Switzerland)</li>
+		<li>Coorganizer of <a href="https://www.meeup.com/de-DE/Basel-NET-User-Group/" target="_blank">.NET User Group Basel</a> (Switzerland)</li>
 		<li>Certified Professional for Usability and User Experience (<a href="https://uxqb.org/en" target="_blank">uxqb</a>)</li>
   	</ul>
 </div>
