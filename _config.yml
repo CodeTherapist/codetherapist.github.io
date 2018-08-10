@@ -1,7 +1,7 @@
 title: Blog
 description: Developer Blog of Code Therapist.
 
-url: https://codetherapist.github.io
+url: https://codetherapist.github.io/
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
