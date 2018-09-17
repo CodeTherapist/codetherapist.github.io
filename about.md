@@ -28,5 +28,6 @@ title: About Code Therapist
 		</li>
 		<li>Coorganizer of <a href="https://www.meeup.com/de-DE/Basel-NET-User-Group/" target="_blank">.NET User Group Basel</a> (Switzerland)</li>
 		<li>Certified Professional for Usability and User Experience (<a href="https://uxqb.org/en" target="_blank">uxqb</a>)</li>
+		<li><a href="https://www.youracclaim.com/badges/1efa4a9f-c6f1-4a0c-a85b-ff4fba0e4e92/public_url" target="_blank">Exam passed: Programming in C#</a> (<a href="https://www.microsoft.com/en-us/learning/exam-70-483.aspx" target="_blank">70-483</a>)</li>
   	</ul>
 </div>
