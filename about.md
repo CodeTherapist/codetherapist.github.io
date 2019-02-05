@@ -7,11 +7,14 @@ title: About Code Therapist
 	<h1 class="pageTitle">About Me</h1>
 	<!-- <img src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt=""> -->
 	<p class="intro">
-		<span class="dropcap">H</span>i, I'm Oli!
+		<span class="dropcap">H</span>i, I'm Oli! (a.k.a. Code Therapist)
 	</p>
 	<p>
 	I'm a self-taught professional software developer. 
 	I'm passionate about helping people learn how to write clean code and good software.
+	</p>
+	<p>
+	Follow me on <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank">twitter</a>, see on <a href="https://github.com/{{ site.social.github }}" target="_blank">Github</a> where I contribute to in my spare time and get in touch with me on <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}"  target="_blank">LinkedIn</a>.
 	</p>
 	<ul>
 		<li>Lifelong learner</li>
@@ -30,4 +33,5 @@ title: About Code Therapist
 		<li>Certified Professional for Usability and User Experience (<a href="https://uxqb.org/en" target="_blank">uxqb</a>)</li>
 		<li><a href="https://www.youracclaim.com/badges/1efa4a9f-c6f1-4a0c-a85b-ff4fba0e4e92/public_url" target="_blank">Exam passed: Programming in C#</a> (<a href="https://www.microsoft.com/en-us/learning/exam-70-483.aspx" target="_blank">70-483</a>)</li>
   	</ul>
+	<p><strong>Disclaimer:</strong> All opinions on this blog are my own and don't reflect the views of my employer.</p>
 </div>
