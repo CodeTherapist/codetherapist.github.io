@@ -156,7 +156,7 @@ Car? myCar = null;
 #nullable restore
 {% endhighlight %}
 
-### Technical deatails
+### Technical details
 
 When you are curious as myself, then you wonder how is a _nullable reference type_ represented at _CIL_ (Common Intermediate Language) level.
 There is no added type to the type system, but somehow the tooling is able to distinguish between _nullable_- and _non-nullable reference types_.
