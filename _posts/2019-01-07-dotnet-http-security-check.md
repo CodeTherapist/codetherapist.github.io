@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "dotnet-http-security-check"
+title:  "dotnet http-security-check"
 date:   2019-01-07
 ---
 
@@ -27,7 +27,7 @@ Download and install the <a href="https://www.microsoft.com/net/download" target
 dotnet tool install DotnetHttpSecurityCheck -g
 {% endhighlight %}
 
-### Execute a scan 
+### Execute a scan
 
 After installation, you can use the tool directly from the CLI (command line interface):
 
@@ -35,7 +35,7 @@ After installation, you can use the tool directly from the CLI (command line int
 dotnet-http-security-check https://www.google.ch
 {% endhighlight %}
 
-### Analyzing the results 
+### Analyzing the results
 
 Each check returns a result consisting of:
 
@@ -84,4 +84,3 @@ For example the 'Strict-Transport-Secuirty' header is only recognized when sent 
 	<img src="/assets/img/dotnet-security-check-result-skipped.jpg" alt="dotnet-security-check-result-skipped"> 
 	<figcaption>Fig5. - Example for bad skipped</figcaption>
 </figure>
-
