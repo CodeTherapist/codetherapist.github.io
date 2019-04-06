@@ -158,7 +158,7 @@ Car? myCar = null;
 
 ### Technical details
 
-When you are curious as myself, then you wonder how is a _nullable reference type_ represented at _CIL_ (Common Intermediate Language) level.
+When you are curious as myself, then you wonder how is a _nullable reference type_ represented when the code is compiled into an assembly.
 There is no added type to the type system, but somehow the tooling is able to distinguish between _nullable_- and _non-nullable reference types_.
 A closer look with IL-Spy reveals the secret:
 
