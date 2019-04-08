@@ -10,7 +10,7 @@ date:   2019-04-08
 
 ### Prerequisites & Setup
 
-You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) to try out indices. We need to modify the .csproj file to enable C# 8.0 and make use of indexes:
+You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) to try out indexes and ranges. We need to modify the .csproj file to enable C# 8.0:
 
 {% highlight xml %}
 
@@ -20,10 +20,10 @@ You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview
 
 ### Let's compare how we access specific elements in an array
 
-Access elements is not something new. It's fundamental to any programming language and thus also a concept in C#/VB.NET.
-<a href="https://github.com/dotnet/corefx/blob/master/src/Common/src/CoreLib/System/Index.cs" target="_blank"> Index</a> is a new readonly struct added to the Framework.
+Access elements is not something new. It's fundamental to any programming language and thus also a concept in C#.
+<a href="https://github.com/dotnet/corefx/blob/master/src/Common/src/CoreLib/System/Index.cs" target="_blank">Index</a> is a new readonly struct added to the Framework.
 
-I like to stick with cars in this post as well as I did in the <a href="https://codetherapist.github.io/blog/csharp8-nullable-ref-types/" target="_blank">previous blog post</a>.
+I like to stick with cars in this post as well as I did in the <a href="https://codetherapist.github.io/blog/csharp8-nullable-ref-types/" target="_blank">previous C# 8 blog post</a>.
 This time we have 10 parked cars that we get as an array:
 
 {% highlight csharp %}
@@ -104,14 +104,14 @@ The following code is usually what we do to get a _range_ out of a string using 
 {% highlight csharp %}
     var greeting = "Hello my name is Code Therapist!";
     var helloMyNameIs = greeting.Substring(0, 17);
-    var codeTherpaist = greeting.Substring(17, 9);
+    var codeTherapist = greeting.Substring(17, 9);
 {% endhighlight %}
 
 With ranges you can express exactly the same in a slightly different way:
 
 {% highlight csharp %}
     var helloMyNameIs = greeting[..17];
-    var codeTherpaist = greeting[17..^1];
+    var codeTherapist = greeting[17..^1];
 {% endhighlight %}
 
 It compiles internally  to a call to _Substring()_.
