@@ -8,6 +8,16 @@ date:   2019-03-20
     <span class="dropcap">N</span>ullable reference types will change the code we write today.
 </p>
 
+<br/>
+
+### C# 8.0 Series
+
+Want to read my other posts about C# 8?
+
+* C# 8: nullable reference types
+* <a href="https://codetherapist.github.io/blog/csharp8-indexes-ranges/" target="_blank">C# 8: Indexes and Ranges</a>.
+* <a href="https://codetherapist.github.io/blog/csharp8-using/" target="_blank"> C# 8: Using statement revisited!</a>
+
 ### Prerequisites & Setup
 
 To play with this feature you need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0).

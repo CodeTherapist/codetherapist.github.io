@@ -1,12 +1,22 @@
 ---
 layout: post
-title:  "C# 8: indexes and ranges"
+title:  "C# 8: Indexes and Ranges"
 date:   2019-04-08
 ---
 
 <p class="intro">
     <span class="dropcap">I</span>ndex and ranges gives you another way to access elements in an array.
 </p>
+
+<br/>
+
+### C# 8.0 Series
+
+Want to read my other posts about C# 8?
+
+* <a href="https://codetherapist.github.io/blog/csharp8-nullable-ref-types/" target="_blank">C# 8: nullable reference types</a>.
+* C# 8: Indexes and Ranges.
+* <a href="https://codetherapist.github.io/blog/csharp8-using/" target="_blank"> C# 8: Using statement revisited!</a>
 
 ### Prerequisites & Setup
 
