@@ -278,7 +278,7 @@ Triggering GC will remove our plugin assembly again.
 
 ### The AssemblyLoadContext
 
-Basically the [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0) is the successor of the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0) and provides identical functionality - except the security boundary (isolation).
+Basically the [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0) is the successor of the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0) and provides identical and more functionality - except the security boundary (isolation).
 The smallest security boundary is the process and therefore you would need to use inter-process communication to properly isolate data and code execution.
 
 The [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0) is obsolete and you should prefer [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0) especially for new work and .NET Core.
