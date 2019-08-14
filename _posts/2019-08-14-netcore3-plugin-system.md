@@ -251,20 +251,20 @@ Before we load any plugin assembly, our module list contains everything that is 
     ![dotnet-30-before-find-plugin](/assets/img/dotnet30-plugin/dotnet-30-before-find-plugin.png)
 </a>
 
-Just after the scan, the list is growing and our plugin assembly is added to the list.
+Just after the scan, the list is growing and our plugin assembly is added to the list: **CodeTherapistBlogPluginA.dll**.
 
 <a href="/assets/img/dotnet30-plugin/dotnet-30-after-find-plugin.png" target="_blank"> 
     ![dotnet-30-after-find-plugin](/assets/img/dotnet30-plugin/dotnet-30-after-find-plugin.png)
 </a>
 
 Even though we have already called _AssemblyLoadContext.Unload()_ (inside _pluginFinder.FindAssemliesWithPlugins_), the assembly stays in the module list.
-Right after a full GC, the plugin assembly is removed.
+Right after a full GC, the plugin assembly named **CodeTherapistBlogPluginA.dll** is removed.
 
 <a href="/assets/img/dotnet30-plugin/dotnet-30-after-find-plugin-collected.png" target="_blank"> 
     ![dotnet-30-after-find-plugin-collected](/assets/img/dotnet30-plugin/dotnet-30-after-find-plugin-collected.png)
 </a>
 
-The plugin host will load the assembly again and execute all calculations.
+The plugin host will load the assembly (**CodeTherapistBlogPluginA.dll**) again and execute all calculations.
 
 <a href="/assets/img/dotnet30-plugin/dotnet-30-after-calculation.png" target="_blank"> 
     ![dotnet-30-after-calculation](/assets/img/dotnet30-plugin/dotnet-30-after-calculation.png)
