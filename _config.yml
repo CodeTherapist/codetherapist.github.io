@@ -16,6 +16,8 @@ navigation:
    url: /index.html
  - title: About
    url: /about
+ - title: Friends Blogs
+   url: /FriendsBlogs
 
 social:
    github: CodeTherapist
