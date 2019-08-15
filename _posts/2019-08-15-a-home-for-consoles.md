@@ -25,7 +25,7 @@ Spawning a new tab is similar as you used to from modern browsers by hitting "CT
 So, you never need to remember induvidual console apps - just start Windows Terminal with all of them ahead your fingertips.
 Furthermore you can also group tabs by running multiple Windows Terminals side by side.
 
-But the real killer features is that you can extend your terminal real quickly with any console app you have installed and customize the appearance.
+But the real killer feature is that you can extend your terminal real quickly with any console app you have installed and customize the appearance.
 You need to edit your Windows Ternminal settings file (opens with your favorite editor for JSON):
 
 ![windows-terminal-setting](/assets/img/home-for-consoles/windows-terminal-setting.png)
