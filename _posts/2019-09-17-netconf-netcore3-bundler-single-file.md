@@ -19,7 +19,7 @@ I'm excited to be part of the .NET Conf with this *every day* mini-post series u
 * 2019-09-18
 * 2019-09-19
 * 2019-09-20
-* 2019-09-237
+* 2019-09-23
 
 It's definitely worth attending a [.NET Conf 2019 local event](https://www.dotnetconf.net/local-events) to get together with other .NET friends.
 Join me on the 30th september at [Community .NET Conf 2019 Event](https://www.meetup.com/de-DE/Basel-NET-User-Group/events/264124718/).
