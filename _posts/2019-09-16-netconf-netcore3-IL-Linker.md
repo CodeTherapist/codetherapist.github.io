@@ -15,7 +15,7 @@ date:   2019-09-16
 I'm excited to be part of the .NET Conf with this *every day* mini-post series until the 23th September.
 
 * IL-Linker in .NET Core 3.0
-* 2019-09-17
+* [The Bundler in .NET Core 3.0]({% post_url 2019-09-17-netconf-netcore3-bundler-single-file %})
 * 2019-09-18
 * 2019-09-19
 * 2019-09-20
@@ -63,9 +63,9 @@ Let's compare the size of the application publish directory:
 
 **Trimmed: 25,3 MB (26.548.001 bytes)**
 
-**Note trimmed: 65,8 MB (69.091.753 bytes)**
+**Not trimmed: 65,8 MB (69.091.753 bytes)**
 
-Around 30 MB smaller - not that much but still enough to be worth doing it.
+Around ~30-40 MB smaller - not that much but still enough to be worth doing it.
 
 ### Framework-Dependent Deployment (FDD)
 
