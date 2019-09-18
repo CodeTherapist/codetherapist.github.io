@@ -16,7 +16,7 @@ I'm excited to be part of the .NET Conf with this *every day* mini-post series u
 
 * [IL-Linker in .NET Core 3.0]({% post_url 2019-09-16-netconf-netcore3-IL-Linker %})
 * The Bundler in .NET Core 3.0
-* 2019-09-18
+* [Crossgen as build step with .NET Core 3.0]({% post_url 2019-09-18-netconf-netcore3-crossgen %})
 * 2019-09-19
 * 2019-09-20
 * 2019-09-23
