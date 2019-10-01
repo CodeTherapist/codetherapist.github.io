@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Platform intrinsics in .NET Core 3.0"
-date: 2019-09-22
+date: 2019-09-20
 ---
 
 <p class="intro">
