@@ -71,14 +71,14 @@ public void ExportToFilesTest()
     string file = null;
     try
     {
-        var summary = TestBenchmarkSummaries.GetSummary();
+        var summary = TestBenchmarkRunner.GetSummary();
         var xlsxReporter = new XlsxExporter();
+        var dateTime = DateTime.Now;
         var files = xlsxReporter.ExportToFiles(summary, NullLogger.Instance);
-
         Assert.True(files.Any());
         file = files.First();
         Assert.True(File.Exists(file));
-        Assert.True(File.GetLastWriteTime(file) > DateTime.Now.AddSeconds(-10));
+        Assert.True(File.GetLastWriteTime(file) > dateTime);
     }
     finally
     {
@@ -89,7 +89,7 @@ public void ExportToFilesTest()
 {% endhighlight %}
 
 This test is more like an integration test - it runs a real benchmark and uses the output of it.
-_Note: Unfortunaelty I did not find a good way of "mock" the `Summary` class._
+Unfortunaelty I did not find a good way of "mock" the `Summary` class.
 
 The method of the interface `IExporter.ExportToFiles(Summary summary, ILogger consoleLogger)` requires a physical file on the disk. 
 For unit testing purpose, this isn't optimal - imagine, there is for example an access authorization issue when the file should be written. 
