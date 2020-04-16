@@ -21,12 +21,12 @@ I'm excited to be part of the .NET Conf with this *every day* mini-post series u
 * [Platform intrinsics in .NET Core 3.0]({% post_url 2019-09-20-netconf-netcore3-platform-intrinsics %})
 * [.NET Conf 2019 is right ahead]({% post_url 2019-09-22-netconf-netcore3-my-watch-list %})
 
-It's definitely worth attending a [.NET Conf 2019 local event](https://www.dotnetconf.net/local-events) to get together with other .NET friends.
-Join me on the 30th september at [Community .NET Conf 2019 Event](https://www.meetup.com/de-DE/Basel-NET-User-Group/events/264124718/).
+It's definitely worth attending a [.NET Conf 2019 local event](https://www.dotnetconf.net/local-events){:target="_blank"} to get together with other .NET friends.
+Join me on the 30th september at [Community .NET Conf 2019 Event](https://www.meetup.com/de-DE/Basel-NET-User-Group/events/264124718/){:target="_blank"}.
 
 ## Prerequisites & Setup
 
-You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) to try out this feature.
+You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/){:target="_blank"} and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0){:target="_blank"} to try out this feature.
 
 ## How to use the IL-Linker
 

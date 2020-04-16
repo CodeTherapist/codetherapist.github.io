@@ -20,7 +20,7 @@ Want to read my other posts about C# 8?
 
 ### Prerequisites & Setup
 
-You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) to try out the new using statement syntax. We need to modify the .csproj file to enable C# 8.0 as well:
+You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/){:target="_blank"} and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0){:target="_blank"} to try out the new using statement syntax. We need to modify the .csproj file to enable C# 8.0 as well:
 
 {% highlight xml %}
 

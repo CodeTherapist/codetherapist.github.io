@@ -168,9 +168,9 @@ Beside that, you can define custom color schemes or customize the key bindings f
 
 ### Where can I get it?
 
-Well, [Windows Terminal is open source](https://github.com/microsoft/terminal) - you can build it right away from source...
+Well, [Windows Terminal is open source](https://github.com/microsoft/terminal){:target="_blank"} - you can build it right away from source...
 
-Okay, just kidding. You will need at least Windows 10 version 18362.0 or higher and it's available through the [Microsoft Store](https://www.microsoft.com/store/productId/9N0DX20HK701).
+Okay, just kidding. You will need at least Windows 10 version 18362.0 or higher and it's available through the [Microsoft Store](https://www.microsoft.com/store/productId/9N0DX20HK701){:target="_blank"}.
 Be aware that, Windows Terminal is still in preview (version 0.3.2171.0) as I post this.
 
 ### Conclusion

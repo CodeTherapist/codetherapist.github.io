@@ -11,10 +11,10 @@ date: 2020-01-11
 
 ### Intro
 
-Almost half year ago, there was an [announcement](https://github.com/dotnet/aspnetcore/issues/12890) that the two nuget packages [Microsoft.AspNetCore.SpaServices](https://www.nuget.org/packages/Microsoft.AspNetCore.SpaServices/) and [Microsoft.AspNetCore.NodeServices](https://www.nuget.org/packages/Microsoft.AspNetCore.NodeServices/) are getting deprecated. Thus they will be removed and no longer supported starting with .NET 5. At the time of writing this post, ASP.NET Core 3.1 is marking the methods of those packages as deprecated, but still functional and supported.
+Almost half year ago, there was an [announcement](https://github.com/dotnet/aspnetcore/issues/12890){:target="_blank"} that the two nuget packages [Microsoft.AspNetCore.SpaServices](https://www.nuget.org/packages/Microsoft.AspNetCore.SpaServices/){:target="_blank"} and [Microsoft.AspNetCore.NodeServices](https://www.nuget.org/packages/Microsoft.AspNetCore.NodeServices/){:target="_blank"} are getting deprecated. Thus they will be removed and no longer supported starting with .NET 5. At the time of writing this post, ASP.NET Core 3.1 is marking the methods of those packages as deprecated, but still functional and supported.
 
 Needless to say, that many developer are not really happy with the deprecation decision because they rely on one or both nuget packages.
-I wrote as well a [comment to this discussion](https://github.com/dotnet/aspnetcore/issues/12890#issuecomment-518545514) to encourage that there should be at least a migration guide.
+I wrote as well a [comment to this discussion](https://github.com/dotnet/aspnetcore/issues/12890#issuecomment-518545514){:target="_blank"} to encourage that there should be at least a migration guide.
 For everyone that doesn't know the packages, they are usually used for the following scenarios (but not limited to):
 
 * ASP.NET Core SPA (React, Angular, Vue or others)
@@ -59,7 +59,7 @@ This is a tremendous productivity boost while working on the front-end part of t
 
 ### The Solution
 
-The proposed solution does only work when you have a mini-web-server as most front-end frameworks provide today (e.g. Angular CLI, create-react-app, vue-cli-service). For my ASP.NET Core Vue SPA application, I used the [VueCliMiddleware](https://www.nuget.org/packages/VueCliMiddleware/) nuget package that does the heavy lifting. The `Startup.cs` has been changed to the following: 
+The proposed solution does only work when you have a mini-web-server as most front-end frameworks provide today (e.g. Angular CLI, create-react-app, vue-cli-service). For my ASP.NET Core Vue SPA application, I used the [VueCliMiddleware](https://www.nuget.org/packages/VueCliMiddleware/){:target="_blank"} nuget package that does the heavy lifting. The `Startup.cs` has been changed to the following: 
 
 {% highlight c# %}
 public void Configure(IApplicationBuilder app, IHostEnvironment env)
@@ -111,6 +111,6 @@ I essentially explained this with Vue because there is only officially support f
 
 When you have to migrate your ASP.NET Core 2.x SPA project: I recommend to have a look at the starter project template, to see how you could change the `Startup.cs`:
 
-* For Angular, have a look at the (official) [ASP.NET Core SPA Angular Template](https://github.com/dotnet/aspnetcore/tree/master/src/ProjectTemplates/Web.Spa.ProjectTemplates/content/Angular-CSharp).
-* For React, have a look at the (official) [ASP.NET Core SPA React Template](https://github.com/dotnet/aspnetcore/tree/master/src/ProjectTemplates/Web.Spa.ProjectTemplates/content/React-CSharp).
-* For Vue, have a look at the (unofficial) [ASP.NET Core Vue SPA template](https://github.com/SoftwareAteliers/asp-net-core-vue-starter) - that has the same solution as I used here.
+* For Angular, have a look at the (official) [ASP.NET Core SPA Angular Template](https://github.com/dotnet/aspnetcore/tree/master/src/ProjectTemplates/Web.Spa.ProjectTemplates/content/Angular-CSharp){:target="_blank"}.
+* For React, have a look at the (official) [ASP.NET Core SPA React Template](https://github.com/dotnet/aspnetcore/tree/master/src/ProjectTemplates/Web.Spa.ProjectTemplates/content/React-CSharp){:target="_blank"}.
+* For Vue, have a look at the (unofficial) [ASP.NET Core Vue SPA template](https://github.com/SoftwareAteliers/asp-net-core-vue-starter){:target="_blank"} - that has the same solution as I used here.

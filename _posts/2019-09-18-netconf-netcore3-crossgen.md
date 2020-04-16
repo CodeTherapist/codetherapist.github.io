@@ -22,21 +22,21 @@ I'm excited to be part of the .NET Conf with this *every day* mini-post series u
 * [Platform intrinsics in .NET Core 3.0]({% post_url 2019-09-20-netconf-netcore3-platform-intrinsics %})
 * [.NET Conf 2019 is right ahead]({% post_url 2019-09-22-netconf-netcore3-my-watch-list %})
 
-It's definitely worth attending a [.NET Conf 2019 local event](https://www.dotnetconf.net/local-events) to get together with other .NET friends.
-Join me on the 30th september at [Community .NET Conf 2019 Event](https://www.meetup.com/de-DE/Basel-NET-User-Group/events/264124718/).
+It's definitely worth attending a [.NET Conf 2019 local event](https://www.dotnetconf.net/local-events){:target="_blank"} to get together with other .NET friends.
+Join me on the 30th september at [Community .NET Conf 2019 Event](https://www.meetup.com/de-DE/Basel-NET-User-Group/events/264124718/){:target="_blank"}.
 
 ## Prerequisites & Setup
 
-You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) to try out this feature.
+You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/){:target="_blank"} and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0){:target="_blank"} to try out this feature.
 
 ## From NGEN to Crossgen
 
-As you maybe know, your source code is compiled (by [Roslyn](https://github.com/dotnet/roslyn/)) into IL-Code (CIL, Common Intermediate Language): a set of instructions (kind of low level language) that is platform- and processor independent. Unlike native code, before your .NET application can run, it requires a JIT (Just-in-Time) compiler that translates the IL-Code into native code (that is platform- and processor specific). 
+As you maybe know, your source code is compiled (by [Roslyn](https://github.com/dotnet/roslyn/){:target="_blank"}) into IL-Code (CIL, Common Intermediate Language): a set of instructions (kind of low level language) that is platform- and processor independent. Unlike native code, before your .NET application can run, it requires a JIT (Just-in-Time) compiler that translates the IL-Code into native code (that is platform- and processor specific). 
 
 This JIT compilation (done by RyuJIT) into native code does take advantage of optimized or specialized instructions of the underlying platform/CPU and can also re-optimize methods on the fly (e.g. Tiered Compilation) - that's great isn't it?
 
 But this process of JIT compilation isn't free and is noticeable especially on the startup - as always software development is a trade-off.
-How could we mitigate that? A solution introduced nearly at the beginning of .NET era: the tool [NGEN](https://docs.microsoft.com/en-us/dotnet/framework/tools/ngen-exe-native-image-generator) (.NET Framework 2.0 and onwards).
+How could we mitigate that? A solution introduced nearly at the beginning of .NET era: the tool [NGEN](https://docs.microsoft.com/en-us/dotnet/framework/tools/ngen-exe-native-image-generator){:target="_blank"} (.NET Framework 2.0 and onwards).
 
 This NGEN compiled the .NET assembly into a special native image with native code. This concept is called AOT (ahead of time) compilation, *kind of opposite* of JIT. Unfortunately NGEN had by design the drawback, you couldn't create the native images up-front as part of your application build and ship it to the client...
 

@@ -21,16 +21,16 @@ I'm excited to be part of the .NET Conf with this *every day* mini-post series u
 * [Platform intrinsics in .NET Core 3.0]({% post_url 2019-09-20-netconf-netcore3-platform-intrinsics %})
 * [.NET Conf 2019 is right ahead]({% post_url 2019-09-22-netconf-netcore3-my-watch-list %})
 
-It's definitely worth attending a [.NET Conf 2019 local event](https://www.dotnetconf.net/local-events) to get together with other .NET friends.
-Join me on the 30th september at [Community .NET Conf 2019 Event](https://www.meetup.com/de-DE/Basel-NET-User-Group/events/264124718/).
+It's definitely worth attending a [.NET Conf 2019 local event](https://www.dotnetconf.net/local-events){:target="_blank"} to get together with other .NET friends.
+Join me on the 30th september at [Community .NET Conf 2019 Event](https://www.meetup.com/de-DE/Basel-NET-User-Group/events/264124718/){:target="_blank"}.
 
 ## Prerequisites & Setup
 
-You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) to try out this feature.
+You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/){:target="_blank"} and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0){:target="_blank"} to try out this feature.
 
 ## The Bundler
 
-Maybe you never heard about this Bundler. It is part of the [.NET Core setup repository](https://github.com/dotnet/core-setup/tree/master/src/managed/Microsoft.NET.HostModel/Bundle). Consequently, it ships as part of the .NET Core 3.0 SDK.
+Maybe you never heard about this Bundler. It is part of the [.NET Core setup repository](https://github.com/dotnet/core-setup/tree/master/src/managed/Microsoft.NET.HostModel/Bundle){:target="_blank"}. Consequently, it ships as part of the .NET Core 3.0 SDK.
 
 Let's try that out with a bare minimum project setup:
 
@@ -62,12 +62,12 @@ Did you ever had the dream of a portable single file .NET console app, that does
 **This Bundler and the SCD (Self-contained deployment) model enables exactly this *portable single file app* experience!**
 
 The Bundler packs your application and the whole .NET Core framework into a single runnable file (e.g. exe on windows).
-At the first look, it looks similar what the [IL-Merge tool](https://github.com/dotnet/ILMerge) does.
+At the first look, it looks similar what the [IL-Merge tool](https://github.com/dotnet/ILMerge){:target="_blank"} does.
 But the bundler is different than IL-Merge - it keeps all the assemblies (preserves the assembly identities) as is, instead of merging the IL code into one single assembly. With preserving your assemblies, it is still debuggable and stacktraces from exceptions matches the source. 
 
 Pay attention, it isn't cross-platform portable. There are native platform dependencies linked during the *publish* process. 
 So, you couldn't run that console app exe on any other platform than windows.
-Thanks to the tooling, you could create an equivalent output of the app with ease for another platform (see [RID Catalog](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog)):
+Thanks to the tooling, you could create an equivalent output of the app with ease for another platform (see [RID Catalog](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog){:target="_blank"}):
 
 **Windows**
 

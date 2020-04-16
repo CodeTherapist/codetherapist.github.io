@@ -29,7 +29,7 @@ Feel free to share with me your thoughts, maybe I missed an interesting aspect.
 Of course, the whole release of .NET Core 3.0 is the biggest thing they announced - even if everyone knew that already.
 Second, the C# 8.0 language update that goes along side with .NET Core 3, is also worth watching.
 
-So, download [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0) and update your apps or libraries.
+So, download [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0){:target="_blank"} and update your apps or libraries.
 
 #### Secure your NuGet package eco-system
 

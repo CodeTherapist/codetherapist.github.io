@@ -26,7 +26,7 @@ Join me on the 30th september at [Community .NET Conf 2019 Event](https://www.me
 
 ## Prerequisites & Setup
 
-You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0) to try this out.
+You will need [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/){:target="_blank"} and [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0){:target="_blank"} to try this out.
 
 ## The IAsyncDisposable interface
 
@@ -43,8 +43,8 @@ Sure, you could do the following to dispose an object asynchronously in a `async
 
 Wrongly usage of `Task.Run()` could cause thread pool starvation - thread pool threads, are a globally shared resource.
 Beside that, you couldn't use `disposableObj` in a `using` statement.
-The new interface ([IAsyncDisposable](https://docs.microsoft.com/en-us/dotnet/api/system.iasyncdisposable)) helps.
-The `DisposeAsync()` fulfills exactly the same purpose as the `Dispose()` method of [IDisposable](https://docs.microsoft.com/en-us/dotnet/api/system.idisposable?view=netcore-3.0) and should follow the smae implementation rules:
+The new interface ([IAsyncDisposable](https://docs.microsoft.com/en-us/dotnet/api/system.iasyncdisposable){:target="_blank"}) helps.
+The `DisposeAsync()` fulfills exactly the same purpose as the `Dispose()` method of [IDisposable](https://docs.microsoft.com/en-us/dotnet/api/system.idisposable?view=netcore-3.0){:target="_blank"} and should follow the smae implementation rules:
 
 * DisposeAsync/Dispose could be called multiple times, subsequent calls must be ignored
 * DisposeAsync/Dispose shouldn't throw exception

@@ -12,13 +12,13 @@ date:   2019-08-14
 
 ### Prerequisites
 
-You need [VS 2019](https://visualstudio.microsoft.com/vs/) and [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0) (currently in preview 8 while posting this).
+You need [VS 2019](https://visualstudio.microsoft.com/vs/){:target="_blank"} and [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0){:target="_blank"} (currently in preview 8 while posting this).
 
 ### Getting started
 
 In this post I show how you could implement a plugin system that can unload the plugins dynamically.
 I also provide some background information behind the techniques and classes involved.
-Unlike the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0), the [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0) let's you unload the plugin types and the owned assemblies - sounds promising, right?
+Unlike the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0){:target="_blank"}, the [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0){:target="_blank"} let's you unload the plugin types and the owned assemblies - sounds promising, right?
 
 #### The PluginFinder
 
@@ -278,17 +278,17 @@ Triggering GC will remove our plugin assembly again.
 
 ### The AssemblyLoadContext
 
-Basically the [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0) is the successor of the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0) and provides identical and more functionality - except the security boundary (isolation).
+Basically the [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0){:target="_blank"} is the successor of the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0){:target="_blank"} and provides identical and more functionality - except the security boundary (isolation).
 The smallest security boundary is the process and therefore you would need to use inter-process communication to properly isolate data and code execution.
 
-The [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0) is obsolete and you should prefer [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0) especially for new work and .NET Core.
-Under .NET Core the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0) is already limited. It does not provide isolation, unloading, or security boundaries.
+The [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0){:target="_blank"} is obsolete and you should prefer [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0){:target="_blank"} especially for new work and .NET Core.
+Under .NET Core the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0){:target="_blank"} is already limited. It does not provide isolation, unloading, or security boundaries.
 
-Every .NET App has at least one (not collectible) [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0) named "Default" where all the assemblies are loaded by the .NET runtime.
+Every .NET App has at least one (not collectible) [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0){:target="_blank"} named "Default" where all the assemblies are loaded by the .NET runtime.
 
 #### Type != Type
 
-When you deal with multiple [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0) instances you could run in the following exception:
+When you deal with multiple [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0){:target="_blank"} instances you could run in the following exception:
 
  ![dotnet-30-type!=type](/assets/img/dotnet30-plugin/dotnet-30-type!=type.png)
 
@@ -297,8 +297,8 @@ The direct referenced assembly has a different version than the side loaded libr
 
 #### Migrate from AppDomain to AssemblyLoadContext
 
-Maybe you still using the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0) in an application.
-Now, the following code shows how to replace [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0) methods by the appropriate equivalent method of [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0):
+Maybe you still using the [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0){:target="_blank"} in an application.
+Now, the following code shows how to replace [AppDomain](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.0){:target="_blank"} methods by the appropriate equivalent method of [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0){:target="_blank"}:
 
 {% highlight c# %}
     // Create new "context" for loading assemblies:
@@ -322,5 +322,5 @@ Now, the following code shows how to replace [AppDomain](https://docs.microsoft.
 
 ### Conclusion
 
-I'm excited about the new capability of the [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0) class and how it is implemented. It extends the possibilities regarding the architecture and functionality of an application.
+I'm excited about the new capability of the [AssemblyLoadContext](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0){:target="_blank"} class and how it is implemented. It extends the possibilities regarding the architecture and functionality of an application.
 Hopefully you like my post and you could take something useful away from it. Let me know what you think :)
